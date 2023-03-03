@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="stop-watch mt-5 mx-auto p-2 text-center w-[500px] bg-sky-400">
+        <div class="text-end">
+            <button>
+                <i class="stop-watch__del-icon--white fa-sharp fa-solid fa-trash"></i> 削除
+            </button>
+            <button class="pl-2">
+                <i class="fa-sharp fa-solid fa-plus"></i> 追加
+            </button>
+        </div>        
+        <div class="stop-watch__time pb-3 text-5xl">00:00:00</div>
+        <div>
+            <button class="stop-watch__start-and-stop-button bg-blue-500 hover:bg-blue-700 text-white px-2 py-1" type="button">start</button>
+            <button class="stop-watch__reset-button bg-blue-500 hover:bg-blue-700 text-white px-2 py-1" type="button">reset</button>
+        </div>
+    </div>
+
+
+    <div class="screen-lock text-center">
+        <div>画面スリープ防止機能：<span class="screen-lock__status text-red-500"></span></div>
+        <input class="screen-lock__check-box" type="checkbox" name="screen-lock">
+        <label for="screen-lock">画面スリープを防止する</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
